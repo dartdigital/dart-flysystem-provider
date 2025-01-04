@@ -128,10 +128,6 @@ Make changes to the code in the src directory. Run the following command to refl
 docker compose exec webserver composer update
 ```
 
-# License
-
-This plugin is licensed under the MIT License.
-
 # Support
 
 If you have any questions or encounter issues, please open an Issue in this repository! 🎉
