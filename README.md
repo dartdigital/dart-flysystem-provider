@@ -31,24 +31,40 @@ use Dart\Library\Craft\StorageProvider\Enums\AvailableAdapter;
 
 return [
     '*' => [
-        'adapter' => AvailableAdapter::S3,
-        's3Settings' => new S3AdapterConfig(
-            clientConfig: new S3ClientConfig(
-                host: App::parseEnv('$S3_HOST'),
-                usePathStyleEndpoint: App::parseBooleanEnv('$S3_USE_PATH_STYLE_ENDPOINT'),
-                credentials: new S3Credentials(
-                    key: App::parseEnv('$S3_KEY'),
-                    secret: App::parseEnv('$S3_SECRET'),
-                ),
+        'adapterConfigs' => [
+            'main' => new S3Adapter(
+                args: [
+                    'endpoint' => App::parseEnv('$S3_HOST'),
+                    'use_path_style_endpoint' => App::parseBooleanEnv('$S3_USE_PATH_STYLE_ENDPOINT'),
+                    'credentials' => [
+                        'key' => App::parseEnv('$S3_KEY'),
+                        'secret' => App::parseEnv('$S3_SECRET'),
+                    ],
+                ],
+                bucket: App::parseEnv('$S3_BUCKET')
             ),
-            bucket: App::parseEnv('$S3_BUCKET')
-        ),
+            'videos' => new S3Adapter(
+                args: [
+                    'endpoint' => App::parseEnv('$S3_HOST'),
+                    'use_path_style_endpoint' => App::parseBooleanEnv('$S3_USE_PATH_STYLE_ENDPOINT'),
+                    'credentials' => [
+                        'key' => App::parseEnv('$S3_KEY'),
+                        'secret' => App::parseEnv('$S3_SECRET'),
+                    ],
+                ],
+                bucket: App::parseEnv('$S3_BUCKET')
+            ),
+        ],
     ],
     'dev' => [
-        'adapter' => AvailableAdapter::LOCAL,
-        'localSettings' => new LocalAdapterConfig(
-            location: App::parseEnv('$LOCAL_STORAGE_LOCATION')
-        ),
+        'adapterConfigs' => [
+            'main' => new LocalAdapter(
+                location: App::parseEnv('$LOCAL_STORAGE_LOCATION')
+            ),
+            'videos' => new LocalAdapter(
+                location: App::parseEnv('$LOCAL_STORAGE_LOCATION')
+            ),
+        ],
     ],
 ];
 ```
