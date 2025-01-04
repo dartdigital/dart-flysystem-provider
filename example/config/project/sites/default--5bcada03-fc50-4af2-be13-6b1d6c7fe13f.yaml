@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: de
+name: 'Dev App'
+primary: true
+siteGroup: fd926006-3b44-45a6-afdc-b947fb73ccce # Dev App
+sortOrder: 1

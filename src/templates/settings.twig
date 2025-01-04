@@ -1,0 +1,24 @@
+{% import '_includes/forms.twig' as forms %}
+
+{% set options = {} %}
+{% for key, value in filesystems %}
+    {% set options = options | merge({(value): value}) %}
+{% endfor %}
+
+
+{% set bucketInput %}
+    {{ forms.select({
+        label: 'Configuration',
+        name: 'configurationHandle',
+        options: options,
+        required: true,
+        value: fs.configurationHandle
+    }) }}
+{% endset %}
+
+{{ forms.field({
+    label: "Configuration",
+    required: true,
+    errors: null,
+    instructions: 'Select the configuration configured in `craft-storage-provider.php`.'
+}, bucketInput) }}

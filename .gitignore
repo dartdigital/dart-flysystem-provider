@@ -1,0 +1,12 @@
+.DS_Store
+.idea
+vendor
+logs
+var
+
+*.key
+*.key.1
+
+.env.local
+
+/minio

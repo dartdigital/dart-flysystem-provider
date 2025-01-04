@@ -1,0 +1,48 @@
+dateModified: 1736023013
+email:
+  fromEmail: philipp.treichel@d-art-design.de
+  fromName: 'Dev App'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  main:
+    hasUrls: true
+    name: Main
+    settings:
+      configurationHandle: main
+    type: Dart\Library\Craft\StorageProvider\Filesystem\DartFlysystemStorage
+    url: $BASIS_URL
+  videos:
+    hasUrls: true
+    name: Videos
+    settings:
+      configurationHandle: videos
+    type: Dart\Library\Craft\StorageProvider\Filesystem\DartFlysystemStorage
+    url: $BASIS_URL
+meta:
+  __names__:
+    5bcada03-fc50-4af2-be13-6b1d6c7fe13f: 'Dev App' # Dev App
+    66f377b1-5e11-453a-8632-f2686054495e: Videos # Videos
+    c77605e9-f753-4cd5-aae2-fc7e071a42ff: Main # Main
+    fd926006-3b44-45a6-afdc-b947fb73ccce: 'Dev App' # Dev App
+plugins:
+  cloudflare-r2:
+    edition: standard
+    enabled: true
+    schemaVersion: '1.0'
+  craft-storage-provider:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Dev App'
+  schemaVersion: 5.5.0.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

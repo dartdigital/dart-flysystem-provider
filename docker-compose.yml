@@ -1,0 +1,50 @@
+services:
+  php:
+    build: .
+    volumes:
+      - .:/var/www/html
+    profiles:
+      - dev
+      - ci
+  webserver:
+    build: .
+    ports:
+      - 80:80
+    profiles:
+      - dev
+    links:
+      - db
+    depends_on:
+      - db
+    volumes:
+      - ./example:/var/www/html
+      - .:/var/www/src
+  db:
+    image: mysql:8
+    ports:
+      - 3306:3306
+    profiles:
+      - dev
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "${DOCKER_DB_ROOT_PASSWORD}"
+      MYSQL_DATABASE: "${DOCKER_DB_NAME}"
+      MYSQL_USER: "${DOCKER_DB_USER}"
+      MYSQL_PASSWORD: "${DOCKER_DB_PASSWORD}"
+  minio:
+    image: minio/minio
+    ports:
+      - 9000:9000
+      - 9001:9001
+    profiles:
+      - dev
+    environment:
+      MINIO_ROOT_USER: "${MINIO_ROOT_USER}"
+      MINIO_ROOT_PASSWORD: "${MINIO_ROOT_PASSWORD}"
+    volumes:
+      - ./minio/data:/data
+    command: server --console-address ":9001" /data
+
+volumes:
+  db_data:
