@@ -27,7 +27,7 @@ A Craft CMS plugin that provides a flexible file storage system per environment.
 ## Installation
 
 ### Install:  
-`composer require dartdigital/craft-flysystem-storage`
+`composer require dartdigital/craft-storage-provider`
 
 ### Config
 
