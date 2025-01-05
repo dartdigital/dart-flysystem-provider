@@ -19,7 +19,7 @@ A Craft CMS plugin that provides a flexible file storage system per environment.
 | AWS S3                 | ⚠️ (alpha)  | ❌ (planned) |
 | DigitalOcean Spaces    | ⚠️ (alpha)  | ❌ (planned) |
 | FTP                    | ⚠️ (alpha)  | ❌ (planned) |
-| Google Cloud Storage   | ❌ (planned) | ❌ (planned) |
+| Google Cloud Storage   | ⚠️ (alpha)  | ❌ (planned) |
 | All Flysystem Adapters | ⚠️ (alpha)  | -           |
 
 ---
