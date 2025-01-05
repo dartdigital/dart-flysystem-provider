@@ -39,7 +39,7 @@ The names of the adapterConfigs can be freely chosen. They only need to be selec
 
 
 #### craft-storage-provider.php
-```
+```php
 // config/craft-storage-provider.php
 <?php
 
@@ -131,7 +131,7 @@ return [
 ```
 
 #### .env
-```
+```apacheconf
 # DigitalOcean
 DIGITAL_OCEAN_BASIS_URL=
 DIGITAL_OCEAN_KEY_ID=
@@ -187,7 +187,7 @@ Prerequisites
 
 Follow these steps to set up the local development environment:
 
-```
+```sh
 docker compose --profile dev up
 docker compose exec webserver composer install
 
@@ -216,7 +216,7 @@ Password: minio-admin
 
 Make changes to the code in the src directory. Run the following command to reflect the changes in the CMS:
 
-```
+```sh
 docker compose exec webserver composer update
 ```
 
