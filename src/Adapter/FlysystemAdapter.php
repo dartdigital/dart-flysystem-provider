@@ -2,30 +2,24 @@
 
 namespace Dart\Library\Craft\StorageProvider\Adapter;
 
-use Aws\S3\S3Client;
 use craft\flysystem\base\FlysystemFs;
-use League\Flysystem\AwsS3V3\AwsS3V3Adapter;
 use League\Flysystem\FilesystemAdapter;
 
-class AwsS3Adapter extends FlysystemFs {
+class FlysystemAdapter extends FlysystemFs {
 
     public function __construct(
-        public array $args,
-        public string $bucket,
+        public FilesystemAdapter $filesystemAdapter,
     ) {
         parent::__construct();
     }
 
     #[\Override] protected function createAdapter(): FilesystemAdapter
     {
-        return new AwsS3V3Adapter(
-            new S3Client($this->args),
-            $this->bucket
-        );
+        return $this->filesystemAdapter;
     }
 
     #[\Override] protected function invalidateCdnPath(string $path): bool
     {
-        return false;
+        return true;
     }
 }

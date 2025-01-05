@@ -49,6 +49,7 @@ class DartFlysystemStorage extends FlysystemFs
      */
     #[Override] protected function createAdapter(): FilesystemAdapter
     {
+        // @todo Fehlerhandling
         return  $this->settings->getAdapterForConfig($this->configurationHandle)->createAdapter();
     }
 
@@ -57,11 +58,8 @@ class DartFlysystemStorage extends FlysystemFs
      */
     #[Override] protected function invalidateCdnPath(string $path): bool
     {
-        Craft::info(
-            message: "invalidating CDN path: $path",
-            category: 'filesystem'
-        );
-        return true;
+        // @todo Fehlerhandling
+        return  $this->settings->getAdapterForConfig($this->configurationHandle)->invalidateCdnPath($path);
     }
 
     /**

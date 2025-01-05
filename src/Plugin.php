@@ -23,7 +23,7 @@ class Plugin extends \craft\base\Plugin
             Fs::class,
             Fs::EVENT_REGISTER_FILESYSTEM_TYPES,
             function(RegisterComponentTypesEvent $event) {
-                Craft::info('Registering DartFlysystemStorage', 'init');
+                Craft::info('Registering DartFlysystemStorage', 'filesystem');
                 $event->types[] = DartFlysystemStorage::class;
             }
         );

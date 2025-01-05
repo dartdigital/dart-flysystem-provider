@@ -1,6 +1,6 @@
 {
-  "name": "dart-digital/craft-storage-provider",
-  "description": "Library for Craft Filesystems",
+  "name": "dartdigital/craft-storage-provider",
+  "description": "Library for environment specific Craft Filesystems.",
   "type": "craft-plugin",
   "license": "proprietary",
   "keywords": ["Craft CMS", "Filesystem", "StorageProvider", "Flysystem"],
@@ -23,11 +23,17 @@
     "craftcms/cms": "^5.3.0",
     "craftcms/flysystem": "^2.0",
     "league/flysystem": "^3.0",
-    "league/flysystem-aws-s3-v3": "^3.0",
+    "league/flysystem-aws-s3-v3": "^3.0.0",
+    "league/flysystem-ftp": "^3.0.0",
+    "league/flysystem-google-cloud-storage": "^3",
     "monolog/monolog": "^3.8",
     "phpstan/phpstan": "^2.0",
     "symfony/dotenv": "^7.2",
-    "symfony/phpunit-bridge": "^7.2"
+    "symfony/phpunit-bridge": "^7.2",
+    "symfony/http-client": "v6.4.16"
+  },
+  "require-dev": {
+    "craftcms/generator": "^2.1"
   },
   "config": {
     "sort-packages": true
@@ -35,8 +41,5 @@
   "extra": {
     "name": "Craft Storage Provider",
     "handle": "craft-storage-provider"
-  },
-  "require-dev": {
-    "craftcms/generator": "^2.1"
   }
 }

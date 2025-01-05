@@ -1,7 +1,7 @@
 altTranslationKeyFormat: null
 altTranslationMethod: none
 fieldLayouts:
-  b56b2cfd-5c99-4e10-8af5-0d69caffcd41:
+  645caae2-bad7-4afa-ade5-679b8d6daecd:
     tabs:
       -
         elementCondition: null
@@ -11,7 +11,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2025-01-04T16:39:33+00:00'
+            dateAdded: '2025-01-05T16:49:51+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -32,17 +32,17 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
-            uid: 4bf0b3d0-efdf-4d81-90c5-a3df9c35dab7
+            uid: 496fc5a1-e01a-40c6-a104-38877a3d7591
             userCondition: null
             warning: null
             width: 100
         name: Inhalt
-        uid: b57accbe-b6f9-4cae-9530-b5be4b9e6d73
+        uid: 72f7bf05-3bbf-48f6-87b0-5f0324cc33de
         userCondition: null
-fs: videos
-handle: videos
-name: Videos
-sortOrder: 2
+fs: customflysystem
+handle: customflysystem
+name: customFlysystem
+sortOrder: 8
 subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

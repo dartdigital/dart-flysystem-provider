@@ -1,30 +1,58 @@
-dateModified: 1736023013
+dateModified: 1736095856
 email:
   fromEmail: philipp.treichel@d-art-design.de
   fromName: 'Dev App'
   transportType: craft\mail\transportadapters\Sendmail
 fs:
-  main:
-    hasUrls: true
-    name: Main
+  cloudflarer2:
+    hasUrls: false
+    name: cloudflareR2
     settings:
-      configurationHandle: main
+      configurationHandle: cloudflareR2
     type: Dart\Library\Craft\StorageProvider\Filesystem\DartFlysystemStorage
-    url: $BASIS_URL
-  videos:
-    hasUrls: true
-    name: Videos
+    url: null
+  commons3:
+    hasUrls: false
+    name: commonS3
     settings:
-      configurationHandle: videos
+      configurationHandle: commonS3
     type: Dart\Library\Craft\StorageProvider\Filesystem\DartFlysystemStorage
-    url: $BASIS_URL
+    url: null
+  customflysystem:
+    hasUrls: false
+    name: customFlysystem
+    settings:
+      configurationHandle: customFlysystem
+    type: Dart\Library\Craft\StorageProvider\Filesystem\DartFlysystemStorage
+    url: null
+  digitalocean:
+    hasUrls: false
+    name: digitalOcean
+    settings:
+      configurationHandle: digitalOcean
+    type: Dart\Library\Craft\StorageProvider\Filesystem\DartFlysystemStorage
+    url: null
+  googlecloudstorage:
+    hasUrls: false
+    name: googleCloudStorage
+    settings:
+      configurationHandle: googleCloudStorage
+    type: Dart\Library\Craft\StorageProvider\Filesystem\DartFlysystemStorage
+    url: null
 meta:
   __names__:
+    1f5b60b6-b64b-4a4f-af4f-4133276ba2ea: commonS3 # commonS3
     5bcada03-fc50-4af2-be13-6b1d6c7fe13f: 'Dev App' # Dev App
-    66f377b1-5e11-453a-8632-f2686054495e: Videos # Videos
-    c77605e9-f753-4cd5-aae2-fc7e071a42ff: Main # Main
+    8aef1a8b-1ed7-41ad-be11-cb5bf3982c31: digitalOcean # digitalOcean
+    9b244539-73db-48af-a448-b8c4caa2b588: googleCloudStorage # googleCloudStorage
+    70bce446-9879-4a85-91b7-ff263d4de54b: cloudflareR2 # cloudflareR2
+    617164ff-0c50-4fee-bada-b35da1c353db: customFlysystem # customFlysystem
     fd926006-3b44-45a6-afdc-b947fb73ccce: 'Dev App' # Dev App
 plugins:
+  aws-s3:
+    edition: standard
+    enabled: true
+    schemaVersion: '2.0'
   cloudflare-r2:
     edition: standard
     enabled: true
@@ -33,6 +61,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  dospaces:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
 system:
   edition: solo
   live: true
