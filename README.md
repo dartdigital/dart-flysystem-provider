@@ -14,13 +14,13 @@ A Craft CMS plugin that provides a flexible file storage system per environment.
 
 | Adapter                | supported   | clear cache |
 |------------------------|-------------|-------------|
-| Cloudflare - R2        | ✅           | ❌ (planned) |
+| Cloudflare - R2        | ⚠️ (alpha)  | ❌ (planned) |
 | Cloudflare - Stream    | ❌ (planned) | -           |
-| AWS S3                 | ✅           | ❌ (planned) |
-| DigitalOcean Spaces    | ✅           | ❌ (planned) |
-| FTP                    | ✅           | ❌ (planned) |
-| Google Cloud Storage   | ✅ (planned) | ❌ (planned) |
-| All Flysystem Adapters | ✅           | -           |
+| AWS S3                 | ⚠️ (alpha)  | ❌ (planned) |
+| DigitalOcean Spaces    | ⚠️ (alpha)  | ❌ (planned) |
+| FTP                    | ⚠️ (alpha)  | ❌ (planned) |
+| Google Cloud Storage   | ❌ (planned) | ❌ (planned) |
+| All Flysystem Adapters | ⚠️ (alpha)  | -           |
 
 ---
 
