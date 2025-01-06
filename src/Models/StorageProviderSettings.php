@@ -1,6 +1,6 @@
 <?php
 
-namespace Dart\Library\Craft\StorageProvider\Models;
+namespace Dart\Library\Craft\FlysystemProvider\Models;
 
 use craft\base\Model;
 use craft\flysystem\base\FlysystemFs;

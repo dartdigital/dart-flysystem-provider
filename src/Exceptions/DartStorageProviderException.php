@@ -1,10 +1,10 @@
 <?php
 
-namespace Dart\Library\Craft\StorageProvider\Exceptions;
+namespace Dart\Library\Craft\FlysystemProvider\Exceptions;
 
 use Throwable;
 
-class CraftStorageProviderException extends \Exception
+class DartStorageProviderException extends \Exception
 {
     public function __construct(string $message = "", int $code = 0, ?Throwable $previous = null)
     {

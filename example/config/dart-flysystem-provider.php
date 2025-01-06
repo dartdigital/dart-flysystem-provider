@@ -1,12 +1,12 @@
 <?php
 
 use craft\helpers\App;
-use Dart\Library\Craft\StorageProvider\Adapter\CloudflareR2Adapter;
-use Dart\Library\Craft\StorageProvider\Adapter\DigitalOceanS3Adapter;
-use Dart\Library\Craft\StorageProvider\Adapter\FlysystemAdapter;
-use Dart\Library\Craft\StorageProvider\Adapter\GoogleCloudStorageAdapter;
-use Dart\Library\Craft\StorageProvider\Adapter\LocalAdapter;
-use Dart\Library\Craft\StorageProvider\Adapter\S3Adapter;
+use Dart\Library\Craft\FlysystemProvider\Adapter\CloudflareR2Adapter;
+use Dart\Library\Craft\FlysystemProvider\Adapter\DigitalOceanS3Adapter;
+use Dart\Library\Craft\FlysystemProvider\Adapter\FlysystemAdapter;
+use Dart\Library\Craft\FlysystemProvider\Adapter\GoogleCloudStorageAdapter;
+use Dart\Library\Craft\FlysystemProvider\Adapter\LocalAdapter;
+use Dart\Library\Craft\FlysystemProvider\Adapter\S3Adapter;
 use Google\Cloud\Storage\StorageClient;
 use League\Flysystem\Ftp\FtpConnectionOptions;
 use League\Flysystem\Ftp\FtpAdapter;

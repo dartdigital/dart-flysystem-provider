@@ -1,6 +1,6 @@
 <?php
 
-namespace Dart\Library\Craft\StorageProvider\Lib;
+namespace Dart\Library\Craft\FlysystemProvider\Lib;
 
 use League\Flysystem\AwsS3V3\AwsS3V3Adapter;
 use League\Flysystem\FileAttributes;

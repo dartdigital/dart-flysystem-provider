@@ -1,4 +1,4 @@
-# Craft Flysystem Storage
+# Dart Flysystem Storage
 
 > ⚠️ WARNING: Alpha-Version!
 
@@ -27,11 +27,11 @@ A Craft CMS plugin that provides a flexible file storage system per environment.
 ## Installation
 
 ### Install:  
-`composer require dartdigital/craft-storage-provider`
+`composer require dartdigital/dart-flysystem-provider`
 
 ### Config
 
-Add the configuration file `craft-storage-provider.php` to the `config` folder.
+Add the configuration file `dart-flysystem-provider.php` to the `config` folder.
 
 This configuration file defines the storage adapter for the Craft Storage Provider plugin. It supports multiple environments, allowing for flexible storage solutions such as using local storage in development and Amazon S3 in production.
 
@@ -40,16 +40,16 @@ The names of the adapterConfigs can be freely chosen. They only need to be selec
 
 #### craft-storage-provider.php
 ```php
-// config/craft-storage-provider.php
+// config/dart-flysystem-provider.php
 <?php
 
 use craft\helpers\App;
-use Dart\Library\Craft\StorageProvider\Adapter\CloudflareR2Adapter;
-use Dart\Library\Craft\StorageProvider\Adapter\DigitalOceanS3Adapter;
-use Dart\Library\Craft\StorageProvider\Adapter\FlysystemAdapter;
-use Dart\Library\Craft\StorageProvider\Adapter\GoogleCloudStorageAdapter;
-use Dart\Library\Craft\StorageProvider\Adapter\LocalAdapter;
-use Dart\Library\Craft\StorageProvider\Adapter\S3Adapter;
+use Dart\Library\Craft\FlysystemProvider\Adapter\CloudflareR2Adapter;
+use Dart\Library\Craft\FlysystemProvider\Adapter\DigitalOceanS3Adapter;
+use Dart\Library\Craft\FlysystemProvider\Adapter\FlysystemAdapter;
+use Dart\Library\Craft\FlysystemProvider\Adapter\GoogleCloudStorageAdapter;
+use Dart\Library\Craft\FlysystemProvider\Adapter\LocalAdapter;
+use Dart\Library\Craft\FlysystemProvider\Adapter\S3Adapter;
 use Google\Cloud\Storage\StorageClient;
 use League\Flysystem\Ftp\FtpConnectionOptions;
 use League\Flysystem\Ftp\FtpAdapter;
@@ -132,6 +132,9 @@ return [
 
 #### .env
 ```apacheconf
+# Dev
+LOCAL_STORAGE_LOCATION=/var/www/html/web/media
+
 # DigitalOcean
 DIGITAL_OCEAN_BASIS_URL=
 DIGITAL_OCEAN_KEY_ID=
@@ -174,7 +177,7 @@ FTP_PORT=
 
 - Create new Filesystem
 - Select `DartFlysystemStorage` as type.
-- Choose a Configuration from `./config/craft-storage-provider.php`
+- Choose a Configuration from `./config/dart-flysystem-provider.php`
 
 ![craft-cms-config.png](docs/_resources/craft-cms-config.png)
 

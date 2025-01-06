@@ -22,9 +22,8 @@
 
 use craft\helpers\App;
 use craft\log\MonologTarget;
-use Dart\Library\Craft\StorageProvider\Filesystem\CraftFlysystemStorage;
+use Dart\Library\Craft\FlysystemProvider\Filesystem\DartFlysystemStorage;
 use Psr\Log\LogLevel;
-use yii\log\FileTarget;
 
 return [
     'id' => App::env('CRAFT_APP_ID') ?: 'CraftCMS',
@@ -33,7 +32,7 @@ return [
             'targets' => [
                 [
                     'class' => MonologTarget::class,
-                    'name' => 'craft-storage-provider',
+                    'name' => 'dart-flysystem-provider',
                     'extractExceptionTrace' => !App::devMode(),
                     'allowLineBreaks' => App::devMode(),
                     'level' => App::devMode() ? LogLevel::INFO : LogLevel::WARNING,

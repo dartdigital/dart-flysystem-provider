@@ -1,12 +1,12 @@
 <?php
 
-namespace Dart\Library\Craft\StorageProvider\Filesystem;
+namespace Dart\Library\Craft\FlysystemProvider\Filesystem;
 
 use Craft;
 use craft\flysystem\base\FlysystemFs;
-use Dart\Library\Craft\StorageProvider\Plugin;
-use Dart\Library\Craft\StorageProvider\Exceptions\CraftStorageProviderException;
-use Dart\Library\Craft\StorageProvider\Models\StorageProviderSettings;
+use Dart\Library\Craft\FlysystemProvider\Plugin;
+use Dart\Library\Craft\FlysystemProvider\Exceptions\DartStorageProviderException;
+use Dart\Library\Craft\FlysystemProvider\Models\StorageProviderSettings;
 use League\Flysystem\FilesystemAdapter;
 use Override;
 
@@ -17,15 +17,15 @@ class DartFlysystemStorage extends FlysystemFs
     public string $configurationHandle = '';
 
     /**
-     * @throws CraftStorageProviderException
      * @param array<string|int, mixed> $config
+     *@throws DartStorageProviderException
      */
     public function __construct(
         array $config = []
     )
     {
         Craft::info(
-            message: "initializing CraftFlysystemStorage",
+            message: "initializing DartFlysystemProvider",
             category: 'filesystem'
         );
 
@@ -37,7 +37,7 @@ class DartFlysystemStorage extends FlysystemFs
                 message: 'Invalid settings',
                 category: 'filesystem'
             );
-            throw new CraftStorageProviderException(
+            throw new DartStorageProviderException(
                 message: 'Invalid settings'
             );
         }
@@ -67,6 +67,6 @@ class DartFlysystemStorage extends FlysystemFs
      */
     public function getSettingsHtml(): ?string
     {
-        return Craft::$app->getView()->renderTemplate('craft-storage-provider/settings', ['filesystems' => $this->settings->getAvailableConfigHandles(), 'fs' => $this]);
+        return Craft::$app->getView()->renderTemplate('dart-flysystem-provider/settings', ['filesystems' => $this->settings->getAvailableConfigHandles(), 'fs' => $this]);
     }
 }

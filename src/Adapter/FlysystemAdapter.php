@@ -1,6 +1,6 @@
 <?php
 
-namespace Dart\Library\Craft\StorageProvider\Adapter;
+namespace Dart\Library\Craft\FlysystemProvider\Adapter;
 
 use craft\flysystem\base\FlysystemFs;
 use League\Flysystem\FilesystemAdapter;

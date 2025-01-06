@@ -3,7 +3,7 @@
   "require": {
     "craftcms/aws-s3": "2.2.1",
     "craftcms/cms": "^5.0.0",
-    "dartdigital/craft-storage-provider": "dev-main",
+    "dartdigital/dart-flysystem-provider": "dev-main",
     "vaersaagod/dospaces": "3.0.0",
     "vlucas/phpdotenv": "^5.4.0"
   },

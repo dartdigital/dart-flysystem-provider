@@ -1,10 +1,10 @@
 <?php
 
-namespace Dart\Library\Craft\StorageProvider\Adapter;
+namespace Dart\Library\Craft\FlysystemProvider\Adapter;
 
 use Aws\S3\S3Client;
 use craft\flysystem\base\FlysystemFs;
-use Dart\Library\Craft\StorageProvider\Lib\CloudflareR2FlysystemAdapter;
+use Dart\Library\Craft\FlysystemProvider\Lib\CloudflareR2FlysystemAdapter;
 use League\Flysystem\FilesystemAdapter;
 
 class CloudflareR2Adapter extends FlysystemFs {

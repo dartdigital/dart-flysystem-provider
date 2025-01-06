@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d801a7095bdcacfa7cdbcb90749bd23",
+    "content-hash": "0f86851a6b1b7026aceefcbd1a98af84",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -641,12 +641,12 @@
             "time": "2015-01-27T10:53:51+00:00"
         },
         {
-            "name": "dartdigital/craft-storage-provider",
+            "name": "dartdigital/dart-flysystem-provider",
             "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../src",
-                "reference": "524fd14758c7921f107af67f1530ef40b8712238"
+                "reference": "bf5d1b96f71ff52dc62c6d2f4aa5a46286d67c7b"
             },
             "require": {
                 "craftcms/cms": "^5.3.0",
@@ -661,7 +661,7 @@
                 "monolog/monolog": "^3.8",
                 "phpstan/phpstan": "^2.0",
                 "symfony/dotenv": "^7.2",
-                "symfony/http-client": "v6.4.16",
+                "symfony/http-client": "^v6.4.0",
                 "symfony/phpunit-bridge": "^7.2"
             },
             "require-dev": {
@@ -669,12 +669,12 @@
             },
             "type": "craft-plugin",
             "extra": {
-                "name": "Craft Storage Provider",
-                "handle": "craft-storage-provider"
+                "name": "Dart Flysystem Provider",
+                "handle": "dart-flysystem-provider"
             },
             "autoload": {
                 "psr-4": {
-                    "Dart\\Library\\Craft\\StorageProvider\\": "src/"
+                    "Dart\\Library\\Craft\\FlysystemProvider\\": "src/"
                 }
             },
             "license": [
@@ -2805,16 +2805,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "2392d360fdf54ea253aa6c68cad1d4ba2e54e927"
+                "reference": "cd6e973e04b4c2b94c86e8612b5a65f0da0e08e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/2392d360fdf54ea253aa6c68cad1d4ba2e54e927",
-                "reference": "2392d360fdf54ea253aa6c68cad1d4ba2e54e927",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/cd6e973e04b4c2b94c86e8612b5a65f0da0e08e7",
+                "reference": "cd6e973e04b4c2b94c86e8612b5a65f0da0e08e7",
                 "shasum": ""
             },
             "require": {
@@ -2859,7 +2859,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-31T07:30:03+00:00"
+            "time": "2025-01-05T16:43:48+00:00"
         },
         {
             "name": "pixelandtonic/imagine",
@@ -4048,18 +4048,18 @@
         },
         {
             "name": "symfony/http-client",
-            "version": "v6.4.16",
+            "version": "v6.4.17",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client/zipball/60a113666fa67e598abace38e5f46a0954d8833d",
-                "reference": "60a113666fa67e598abace38e5f46a0954d8833d",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/88898d842eb29d7e1a903724c94e90a6ca9c0509",
+                "reference": "88898d842eb29d7e1a903724c94e90a6ca9c0509",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1",
                 "psr/log": "^1|^2|^3",
                 "symfony/deprecation-contracts": "^2.5|^3",
-                "symfony/http-client-contracts": "~3.4.3|^3.5.1",
+                "symfony/http-client-contracts": "~3.4.4|^3.5.2",
                 "symfony/service-contracts": "^2.5|^3"
             },
             "conflict": {
@@ -4099,7 +4099,7 @@
             "keywords": [
                 "http"
             ],
-            "time": "2024-11-27T11:52:33+00:00"
+            "time": "2024-12-18T12:18:31+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -6910,7 +6910,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "dartdigital/craft-storage-provider": 20
+        "dartdigital/dart-flysystem-provider": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

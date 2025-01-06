@@ -1,6 +1,6 @@
 <?php
 
-namespace Dart\Library\Craft\StorageProvider\Adapter;
+namespace Dart\Library\Craft\FlysystemProvider\Adapter;
 
 use Aws\S3\S3Client;
 use craft\flysystem\base\FlysystemFs;

@@ -1,4 +1,4 @@
-dateModified: 1736095856
+dateModified: 1736181895
 email:
   fromEmail: philipp.treichel@d-art-design.de
   fromName: 'Dev App'
@@ -9,35 +9,35 @@ fs:
     name: cloudflareR2
     settings:
       configurationHandle: cloudflareR2
-    type: Dart\Library\Craft\StorageProvider\Filesystem\DartFlysystemStorage
+    type: Dart\Library\Craft\FlysystemProvider\Filesystem\DartFlysystemStorage
     url: null
   commons3:
     hasUrls: false
     name: commonS3
     settings:
       configurationHandle: commonS3
-    type: Dart\Library\Craft\StorageProvider\Filesystem\DartFlysystemStorage
+    type: Dart\Library\Craft\FlysystemProvider\Filesystem\DartFlysystemStorage
     url: null
   customflysystem:
     hasUrls: false
     name: customFlysystem
     settings:
       configurationHandle: customFlysystem
-    type: Dart\Library\Craft\StorageProvider\Filesystem\DartFlysystemStorage
+    type: Dart\Library\Craft\FlysystemProvider\Filesystem\DartFlysystemStorage
     url: null
   digitalocean:
     hasUrls: false
     name: digitalOcean
     settings:
       configurationHandle: digitalOcean
-    type: Dart\Library\Craft\StorageProvider\Filesystem\DartFlysystemStorage
+    type: Dart\Library\Craft\FlysystemProvider\Filesystem\DartFlysystemStorage
     url: null
   googlecloudstorage:
     hasUrls: false
     name: googleCloudStorage
     settings:
       configurationHandle: googleCloudStorage
-    type: Dart\Library\Craft\StorageProvider\Filesystem\DartFlysystemStorage
+    type: Dart\Library\Craft\FlysystemProvider\Filesystem\DartFlysystemStorage
     url: null
 meta:
   __names__:
@@ -57,7 +57,7 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: '1.0'
-  craft-storage-provider:
+  dart-flysystem-provider:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

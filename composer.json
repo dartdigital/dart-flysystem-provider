@@ -1,5 +1,5 @@
 {
-  "name": "dartdigital/craft-storage-provider",
+  "name": "dartdigital/dart-flysystem-provider",
   "description": "Library for environment specific Craft Filesystems.",
   "type": "craft-plugin",
   "license": "proprietary",
@@ -13,7 +13,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Dart\\Library\\Craft\\StorageProvider\\": "src/"
+      "Dart\\Library\\Craft\\FlysystemProvider\\": "src/"
     }
   },
   "require": {
@@ -39,7 +39,7 @@
     "sort-packages": true
   },
   "extra": {
-    "name": "Craft Storage Provider",
-    "handle": "craft-storage-provider"
+    "name": "Dart Flysystem Provider",
+    "handle": "dart-flysystem-provider"
   }
 }
