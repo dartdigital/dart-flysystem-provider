@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="clip-Custom_Size_1">
+      <rect width="200" height="200"/>
+    </clipPath>
+  </defs>
+  <g id="Custom_Size_1" data-name="Custom Size – 1" clip-path="url(#clip-Custom_Size_1)">
+    <rect width="200" height="200" fill="#7533ff"/>
+    <g id="ORGANISMEN" transform="translate(28.707 82.837)">
+      <g id="Organismen-2" data-name="Organismen">
+        <g id="Menu">
+          <g id="menu_desktop" transform="translate(0 0)">
+            <g id="dart_dark" transform="translate(0 0)">
+              <path id="Fill-1" d="M34.554,25.29V9.036c0-5-4.53-9.036-9.955-9.036H0V34.326H24.6c5.425,0,9.955-4.038,9.955-9.036Zm-8.8-1.363c0,1.969-.634,2.776-2.425,2.776H8.8V7.622H23.334c1.949,0,2.425.808,2.425,3.079Zm46.3,10.4L71.9,29.379V9.541C71.9.252,62.786,0,61.629,0H41.875V7.622H63.1v5.2H47.88c-6.215,0-10.535,3.281-10.535,9.945v2.221c0,5.351,3.9,9.339,10.325,9.339h8.9a14.546,14.546,0,0,0,6.479-1.363v1.363ZM63.1,21.4c0,4.341-.684,5.3-4.318,5.3H46.143V20.495H63.1Zm50.146,12.923L102.292,21.4a9.345,9.345,0,0,0,8.534-8.985V8.985c0-6.058-5.795-8.985-9.851-8.985h-24.7V34.326h8.8V21.5H90.7l10.587,12.822Zm-11.22-20.495H85.067V7.622H99.342c1.159,0,2.687.151,2.687,2.423Zm40.558-6.209V0H112.669V7.622h10.323v26.7h9.271V7.622Z" fill="#fff" fill-rule="evenodd"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
