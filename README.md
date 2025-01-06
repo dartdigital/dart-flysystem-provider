@@ -1,4 +1,4 @@
-# Dart Flysystem Storage
+# Dart Flysystem Provider
 
 > ⚠️ WARNING: Alpha-Version!
 
