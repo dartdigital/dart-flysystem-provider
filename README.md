@@ -1,7 +1,5 @@
 # Dart Flysystem Provider
 
-> ⚠️ WARNING: Alpha-Version!
-
 A Craft CMS plugin that provides a flexible file storage system per environment. It allows you to use different storage solutions depending on the environment, such as local file storage during development and Amazon S3 in production. Additionally, any Flysystem adapter can be integrated directly into Craft CMS without requiring further configuration. This ensures seamless adaptability to a variety of storage solutions, making it easy to tailor the setup to specific project needs or infrastructure requirements. The plugin streamlines the process of managing file storage across environments, enhancing workflow efficiency and scalability.
 
 ## Features
@@ -12,15 +10,15 @@ A Craft CMS plugin that provides a flexible file storage system per environment.
 
 ## Available Adapters
 
-| Adapter                | supported   | clear cache |
-|------------------------|-------------|-------------|
-| Cloudflare - R2        | ⚠️ (alpha)  | ❌ (planned) |
+| Adapter                | supported  | clear cache |
+|------------------------|------------|-------------|
+| Cloudflare - R2        | ✅          | ❌ (planned) |
 | Cloudflare - Stream    | ❌ (planned) | -           |
-| AWS S3                 | ⚠️ (alpha)  | ❌ (planned) |
-| DigitalOcean Spaces    | ⚠️ (alpha)  | ❌ (planned) |
-| FTP                    | ⚠️ (alpha)  | ❌ (planned) |
-| Google Cloud Storage   | ⚠️ (alpha)  | ❌ (planned) |
-| All Flysystem Adapters | ⚠️ (alpha)  | -           |
+| AWS S3                 | ✅ | ❌ (planned) |
+| DigitalOcean Spaces    | ✅ | ❌ (planned) |
+| FTP                    | ✅ | ❌ (planned) |
+| Google Cloud Storage   | ✅ | ❌ (planned) |
+| All Flysystem Adapters | ✅ | -           |
 
 ---
 
