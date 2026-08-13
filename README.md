@@ -224,3 +224,6 @@ docker compose exec webserver composer update
 # Support
 
 If you have any questions or encounter issues, please open an Issue in this repository! 🎉
+
+# Powered by
+- [Dart Digital](https://d-art-digital.de)
